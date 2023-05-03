@@ -2,10 +2,10 @@ import tensorflow as tf
 import cv2
 
 # Load the low-resolution image
-img = cv2.imread('Pixelup/badpixel.jpg')
+img = cv2.imread('badpixel.jpg')
 
 # Load the ESRGAN model
-model = tf.keras.models.load_model('Pixelup\esrgan_latest_g.h5')
+model = tf.keras.models.load_model('esrgan_latest_g.h5')
 
 # Preprocess the image
 img = img.astype('float32') / 255.0
